@@ -1,10 +1,11 @@
-package com.example.paveldispiter.swoosh
+package com.example.paveldispiter.swoosh.Controler
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.example.paveldispiter.swoosh.Utilities.EXTRA_LEAGUE
+import com.example.paveldispiter.swoosh.R
 import kotlinx.android.synthetic.main.activity_league.*
 
 class LeagueActivity : BaseActivity() {
@@ -16,6 +17,7 @@ class LeagueActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_league)
     }
+
 
     fun onMensClicked(view: View) {
         womensLeagueBtn.isChecked = false
@@ -51,3 +53,4 @@ class LeagueActivity : BaseActivity() {
         }
     }
 }
+
